@@ -1,0 +1,6 @@
+{
+  "name": "SmartGovtPrep – Government Exam Portal",
+  "description": "Comprehensive Indian & State Government Exam preparation portal with live notification countdowns, mock tests, syllabus explorer, current affairs, AI study planner, and smart mentorship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

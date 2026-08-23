@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGovtPrep – Government Exam Preparation & Mock Test Portal 🇮🇳</title>
+  <meta name="description" content="All-in-one government exam preparation platform for UPSC, GPSC, SSC, Banking, Railway, and Police Bharti. Real-time notifications, syllabus checklist, daily current affairs, interactive mock tests, and AI study assistant.">
+  <meta name="keywords" content="SmartGovtPrep, UPSC, GPSC, Gujarat Police Bharti, SSC CGL, SBI PO, IBPS, Mock Test, Govt Exam Syllabus, Current Affairs">
+  
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <span>SmartGovtPrep</span>
+        <span class="brand-flag">🇮🇳</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#categories-section" class="nav-link"><i class="fa-solid fa-grid-2"></i> Categories</a></li>
+          <li><a href="#upcoming-exams-section" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Exams</a></li>
+          <li><a href="#lifetime-roadmap-section" class="nav-link"><i class="fa-solid fa-infinity"></i> Lifetime Roadmap</a></li>
+          <li><a href="#syllabus-section" class="nav-link"><i class="fa-solid fa-book-open"></i> Syllabus</a></li>
+          <li><a href="#current-affairs-section" class="nav-link"><i class="fa-solid fa-newspaper"></i> Current Affairs</a></li>
+          <li><a href="#mock-test-section" class="nav-link"><i class="fa-solid fa-vial"></i> Mock Test</a></li>
+          <li><a href="#ai-assistant-section" class="nav-link"><i class="fa-solid fa-robot"></i> AI Study Assistant</a></li>
+          <li><a href="#planner-section" class="nav-link"><i class="fa-solid fa-calendar-check"></i> Study Plan</a></li>
+          <li><a href="#pricing-section" class="nav-link"><i class="fa-solid fa-crown"></i> Plans</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="upgrade-glow-btn" data-plan-upgrade="premium">
+          <i class="fa-solid fa-bolt"></i> Upgrade ₹99
+        </button>
+
+        <button class="btn btn-secondary btn-sm" id="header-login-btn" onclick="openAuthModal('login')" title="Login to your account">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+
+        <button class="btn btn-primary btn-sm" id="header-register-btn" onclick="openAuthModal('register')" title="Sign Up / Register Free">
+          <i class="fa-solid fa-user-plus"></i> Sign Up
+        </button>
+
+        <div class="header-user-profile" id="header-profile-trigger" title="View Student Profile">
+          <div class="header-avatar" id="header-user-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="header-user-info">
+            <span class="user-name-text" id="header-user-name">Rahul</span>
+            <span class="tier-badge free" id="header-user-tier">Free Tier</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill-tag">
+            <i class="fa-solid fa-award"></i> #1 Portal for UPSC, GPSC, SSC, Banking &amp; Police (Current &amp; Future Year Exams)
+          </div>
+          
+          <h1 class="hero-title">
+            Government Exam Preparation <br>
+            <span class="gradient-text">– Current &amp; Future Year All-in-One</span>
+          </h1>
+
+          <p class="hero-description">
+            Track current year active exam notifications and prepare for future year career targets with interactive syllabus checklists, bilingual daily current affairs, timed mock tests, and 24/7 Chatbot AI Study Assistant.
+          </p>
+
+          <div class="hero-quick-search-box">
+            <i class="fa-solid fa-magnifying-glass hero-search-icon"></i>
+            <input type="text" id="hero-quick-search" class="hero-search-input" placeholder="Search current &amp; future exams (GPSC, UPSC CSE, SSC CGL, Police, Banking, Railway)...">
+          </div>
+
+          <div class="hero-actions-row">
+            <a href="#upcoming-exams-section" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-bullhorn"></i> Upcoming Exams
+            </a>
+            <a href="#mock-test-section" class="btn btn-gold btn-lg">
+              <i class="fa-solid fa-play"></i> Free Mock Test
+            </a>
+            <a href="#ai-assistant-section" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-robot"></i> AI Study Assistant
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Govt Exams Covered</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">25,000+</span>
+              <span class="stat-label">MCQs &amp; PYQ Bank</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">100K+</span>
+              <span class="stat-label">Active Aspirants</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">98.4%</span>
+              <span class="stat-label">Aspirant Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Countdown Widget -->
+        <div class="hero-countdown-wrapper">
+          <div class="glass-card countdown-widget-card">
+            <div class="cw-header">
+              <div class="cw-title-wrap">
+                <span class="pulse-indicator"></span>
+                <h3>Live Exam Countdown</h3>
+              </div>
+              <span class="badge badge-primary">Real-Time Ticker</span>
+            </div>
+
+            <div class="cw-select-box">
+              <label for="hero-countdown-select" style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 4px; display: block;">Select Target Exam Date:</label>
+              <select id="hero-countdown-select">
+                <!-- Dynamically populated from JS -->
+              </select>
+            </div>
+
+            <div class="countdown-display-grid">
+              <div class="countdown-unit">
+                <span class="count-val" id="count-days">00</span>
+                <span class="count-lbl">Days</span>
+              </div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-unit">
+                <span class="count-val" id="count-hours">00</span>
+                <span class="count-lbl">Hours</span>
+              </div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-unit">
+                <span class="count-val" id="count-mins">00</span>
+                <span class="count-lbl">Mins</span>
+              </div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-unit">
+                <span class="count-val" id="count-secs">00</span>
+                <span class="count-lbl">Secs</span>
+              </div>
+            </div>
+
+            <div class="countdown-footer-msg">
+              <i class="fa-regular fa-clock"></i> Countdown to <strong id="countdown-target-label">Selected Exam</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Exam Categories Section -->
+  <section class="section-wrapper bg-subtle" id="categories-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Exam Streams</span>
+        <h2 class="section-title">Explore <span>Exam Categories</span></h2>
+        <p class="section-subtitle">Select your target commission or government board to access tailored syllabus, previous year question papers, and study resources.</p>
+      </div>
+
+      <div class="categories-grid" id="categories-grid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Upcoming Exams Tracker -->
+  <section class="section-wrapper" id="upcoming-exams-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-bell"></i> Current &amp; Future Year Exams</span>
+        <h2 class="section-title">Government Exams <span>Current &amp; Future Year Calendar</span></h2>
+        <p class="section-subtitle">Switch between current year active notifications and future year target exams. Click "Set as My Target" on any exam to synchronize your personal countdown goal.</p>
+      </div>
+
+      <!-- Phase Filter Tabs (Current Year vs Future Year) -->
+      <div class="phase-tabs-row" style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px; flex-wrap: wrap;">
+        <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase;"><i class="fa-solid fa-layer-group"></i> Phase:</span>
+        <button class="phase-tab-btn active" data-phase="all">📋 All Exams</button>
+        <button class="phase-tab-btn" data-phase="current">⚡ Current Year Exams</button>
+        <button class="phase-tab-btn" data-phase="target-future">🎯 Future Year Exams</button>
+      </div>
+
+      <!-- Timeline Filters Row -->
+      <div class="year-filter-row" style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+        <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase;"><i class="fa-solid fa-calendar-days"></i> Timeline:</span>
+        <button class="year-filter-pill active" data-year="all">All Timelines</button>
+        <button class="year-filter-pill" data-year="current">⚡ Current Year</button>
+        <button class="year-filter-pill" data-year="next">🎯 Next Year</button>
+        <button class="year-filter-pill" data-year="future">🚀 Future Target Years</button>
+      </div>
+
+      <div class="filter-bar-wrap">
+        <div class="category-filter-pills">
+          <button class="cat-filter-pill active" data-filter="all">All Categories</button>
+          <button class="cat-filter-pill" data-filter="gpsc">GPSC (Gujarat)</button>
+          <button class="cat-filter-pill" data-filter="upsc">UPSC</button>
+          <button class="cat-filter-pill" data-filter="ssc">SSC</button>
+          <button class="cat-filter-pill" data-filter="banking">Banking &amp; IBPS</button>
+          <button class="cat-filter-pill" data-filter="police">Police Bharti</button>
+          <button class="cat-filter-pill" data-filter="railway">Railway</button>
+          <button class="cat-filter-pill" data-filter="teaching">Teaching</button>
+        </div>
+
+        <div class="exam-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="exam-search-input" placeholder="Search current &amp; future exams, posts, category, or state...">
+        </div>
+      </div>
+
+      <div class="upcoming-exams-list" id="upcoming-exams-list">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 Lifetime Government Exam Career Roadmap & Age Matrix -->
+  <section class="section-wrapper bg-subtle" id="lifetime-roadmap-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-infinity"></i> Lifetime Career Navigator</span>
+        <h2 class="section-title">Lifetime Government Exam <span>Career Roadmap &amp; Age Matrix</span></h2>
+        <p class="section-subtitle">Discover every Central &amp; Gujarat State government exam opportunity you can appear for throughout your life (Age 18 to 45+).</p>
+      </div>
+
+      <!-- Lifetime Stage Navigator Tabs -->
+      <div class="lifetime-stage-tabs" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
+        <button class="lifetime-stage-btn active" data-stage="graduate">🏛️ Graduate Track (Age 20–35/38)</button>
+        <button class="lifetime-stage-btn" data-stage="12th">🎓 10th / 12th Pass (Age 18–25)</button>
+        <button class="lifetime-stage-btn" data-stage="specialist">🔬 Specialist &amp; PG (Age 21–45)</button>
+        <button class="lifetime-stage-btn" data-stage="all">📋 Full Lifetime Matrix (18–45)</button>
+      </div>
+
+      <!-- Lifetime Stage Grid Container -->
+      <div class="lifetime-cards-grid" id="lifetime-cards-grid">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Interactive Lifetime Exam Eligibility Calculator Card -->
+      <div class="lifetime-calc-card" style="margin-top: 40px;">
+        <div class="calc-header-wrap">
+          <div class="calc-title-icon"><i class="fa-solid fa-calculator"></i></div>
+          <div>
+            <h3 style="font-size: 1.3rem; color: #fff;">Check My Lifetime Government Exam Eligibility</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Enter your current profile to instantly calculate all government exams you can take for the rest of your career.</p>
+          </div>
+        </div>
+
+        <div class="calc-form-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px;">
+          <div class="form-group" style="margin: 0;">
+            <label style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 6px; display: block;"><i class="fa-solid fa-user-clock"></i> Your Current Age</label>
+            <input type="number" id="calc-age-input" class="form-control" value="23" min="17" max="50">
+          </div>
+          <div class="form-group" style="margin: 0;">
+            <label style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 6px; display: block;"><i class="fa-solid fa-graduation-cap"></i> Highest Qualification</label>
+            <select id="calc-edu-input" class="form-control">
+              <option value="12th">12th Standard / Higher Secondary</option>
+              <option value="graduate" selected>Any Bachelor's Degree (Graduate)</option>
+              <option value="engineering">B.E. / B.Tech / Technical Degree</option>
+              <option value="pg">Master's Degree / Post-Graduate</option>
+              <option value="law">LLB / Law Graduate</option>
+              <option value="bed">B.Ed / Teaching Qualification</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin: 0;">
+            <label style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 6px; display: block;"><i class="fa-solid fa-id-card"></i> Reservation / Quota Category</label>
+            <select id="calc-cat-input" class="form-control">
+              <option value="general">General / Open (Standard Limits)</option>
+              <option value="obc">OBC / SEBC (+3 to +5 Years Relaxation)</option>
+              <option value="scst">SC / ST (+5 Years Relaxation)</option>
+              <option value="ews">EWS (Standard / State Relaxations)</option>
+              <option value="female">Gujarat Female Candidate (+5 Yrs Extra)</option>
+              <option value="pwd">PwD / Ex-Servicemen (+10 Yrs)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; text-align: right;">
+          <button class="btn btn-primary btn-lg" id="calc-submit-btn" onclick="window.calculateLifetimeEligibility()">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Calculate My Lifetime Opportunities
+          </button>
+        </div>
+
+        <!-- Calculator Result Container -->
+        <div id="lifetime-calc-results" class="lifetime-results-box hidden" style="margin-top: 25px;">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Exam Syllabus Explorer -->
+  <section class="section-wrapper" id="syllabus-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-list-check"></i> Complete Curriculum</span>
+        <h2 class="section-title">Interactive <span>Exam Syllabus & Pattern</span></h2>
+        <p class="section-subtitle">Choose your examination to inspect stage-wise subjects, topic checklist, marks distribution, and negative marking.</p>
+      </div>
+
+      <div class="syllabus-controls">
+        <select id="syllabus-exam-select">
+          <option value="gpsc-class12">GPSC Gujarat Administrative Service Class 1 & 2</option>
+          <option value="upsc-cse">UPSC Civil Services Examination (CSE)</option>
+          <option value="ssc-cgl">SSC Combined Graduate Level (CGL)</option>
+          <option value="sbi-po">SBI & IBPS Probationary Officer (PO)</option>
+          <option value="gujarat-police">Gujarat Police Sub-Inspector (PSI) & Constable</option>
+        </select>
+      </div>
+
+      <div class="syllabus-overview-card" id="syllabus-overview-box">
+        <h3 id="syllabus-exam-title">GPSC Gujarat Administrative Service Class 1-2</h3>
+        <p id="syllabus-exam-overview">Selection consists of 3 stages: Prelims (400 Marks, Objective), Mains (900 Marks, Descriptive 6 Papers), and Personality Test / Interview (100 Marks).</p>
+      </div>
+
+      <div class="syllabus-content-display" id="syllabus-content-display">
+        <!-- Dynamically loaded papers and topic checklist -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Daily Current Affairs Hub -->
+  <section class="section-wrapper" id="current-affairs-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-earth-americas"></i> Daily Exam Digest</span>
+        <h2 class="section-title">Daily <span>Current Affairs & Flash Quizzes</span></h2>
+        <p class="section-subtitle">Curated high-yield news summaries for UPSC, GPSC, SSC, and Banking with instant mini-quizzes.</p>
+      </div>
+
+      <div class="ca-nav-tabs">
+        <button class="ca-tab-btn active" data-cat="all">All News</button>
+        <button class="ca-tab-btn" data-cat="gujarat">🦁 Gujarat Special</button>
+        <button class="ca-tab-btn" data-cat="national">🇮🇳 National</button>
+        <button class="ca-tab-btn" data-cat="economy">📈 Economy & Banking</button>
+        <button class="ca-tab-btn" data-cat="international">🌐 Global Affairs</button>
+        <button class="ca-tab-btn" data-cat="science">🔬 Science & Environment</button>
+      </div>
+
+      <div class="current-affairs-feed" id="current-affairs-feed">
+        <!-- Dynamically rendered via data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Interactive Mock Test Engine -->
+  <section class="section-wrapper" id="mock-test-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-stopwatch"></i> Real Exam Simulation</span>
+        <h2 class="section-title">Interactive <span>Mock Test Arena</span></h2>
+        <p class="section-subtitle">Practice with bilingual MCQs, live countdown timers, question status palettes, and deep answer explanations.</p>
+      </div>
+
+      <div class="mock-test-card" id="mock-test-card">
+        <!-- Intro View -->
+        <div id="mock-test-intro" class="mock-intro-box">
+          <div class="mock-intro-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>General Studies & Aptitude Speed Test</h3>
+          <p>Test your preparation level with 10 high-yield questions covering Indian Polity, Gujarat GK, Economy, Aptitude & Current Affairs under negative marking conditions (+2.0 / -0.66).</p>
+          
+          <div class="mock-intro-settings">
+            <select id="mock-subject-filter">
+              <option value="all">Full Syllabus Mini Mock (10 Questions)</option>
+              <option value="Polity">Polity & Constitution Special</option>
+              <option value="gpsc">Gujarat History & GK Special</option>
+              <option value="ssc">Quantitative Aptitude & Reasoning</option>
+              <option value="banking">Banking & Economy Awareness</option>
+            </select>
+          </div>
+
+          <button id="start-mock-btn" class="btn btn-gold btn-lg">
+            <i class="fa-solid fa-play"></i> Launch Mock Test Now
+          </button>
+
+          <div class="mock-features-chips">
+            <span><i class="fa-solid fa-clock"></i> 10 Mins Timer</span>
+            <span><i class="fa-solid fa-circle-check"></i> Instant Score Card</span>
+            <span><i class="fa-solid fa-lightbulb"></i> Step-by-Step Solutions</span>
+          </div>
+        </div>
+
+        <!-- Arena View -->
+        <div id="mock-test-arena" class="mock-arena-view hidden">
+          <div class="mock-arena-header">
+            <div class="mock-title-wrap">
+              <h3 style="font-size: 1.15rem; color: #fff;">SmartGovtPrep Live Mock Arena</h3>
+            </div>
+            <div class="mock-timer-wrap">
+              <i class="fa-regular fa-clock"></i>
+              <span id="mock-timer-display">10:00</span>
+            </div>
+          </div>
+
+          <div class="mock-arena-grid">
+            <!-- Question Panel -->
+            <div class="mock-question-panel">
+              <div class="mock-q-meta">
+                <h4 id="mock-q-number">Question 1 of 10</h4>
+                <span id="mock-q-subject">Polity • Medium</span>
+              </div>
+
+              <div class="mock-q-text" id="mock-q-text">
+                Loading question text...
+              </div>
+
+              <div class="mock-options-container" id="mock-options-container">
+                <!-- Options rendered dynamically -->
+              </div>
+
+              <div class="mock-actions-bar">
+                <button id="mock-review-btn" class="btn btn-secondary btn-sm">
+                  <i class="fa-regular fa-bookmark"></i> Mark for Review
+                </button>
+                <button id="mock-clear-btn" class="btn btn-outline btn-sm">
+                  Clear Response
+                </button>
+                <div class="mock-nav-actions">
+                  <button id="mock-prev-btn" class="btn btn-secondary btn-sm">Previous</button>
+                  <button id="mock-next-btn" class="btn btn-primary btn-sm">Save & Next</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Palette Panel -->
+            <div class="mock-palette-panel">
+              <h4 style="font-size: 0.95rem; color: #cbd5e1; margin-bottom: 8px;">Question Palette</h4>
+              
+              <div class="palette-legend">
+                <div class="legend-item"><span class="legend-dot dot-answered"></span> Answered</div>
+                <div class="legend-item"><span class="legend-dot dot-review"></span> Review</div>
+                <div class="legend-item"><span class="legend-dot dot-visited"></span> Visited</div>
+                <div class="legend-item"><span class="legend-dot dot-not-visited"></span> Unvisited</div>
+              </div>
+
+              <div class="mock-palette-grid" id="mock-palette-grid">
+                <!-- 1 to 10 buttons -->
+              </div>
+
+              <div class="palette-summary-stats">
+                <div>Answered: <strong id="summary-answered" style="color: #10b981;">0</strong></div>
+                <div>Marked for Review: <strong id="summary-review" style="color: #f59e0b;">0</strong></div>
+                <div>Remaining: <strong id="summary-remaining" style="color: #94a3b8;">10</strong></div>
+              </div>
+
+              <button id="mock-submit-btn" class="btn btn-primary btn-block" style="margin-top: 14px;">
+                <i class="fa-solid fa-check-double"></i> Submit Test
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result View -->
+        <div id="mock-test-result" class="mock-result-box hidden">
+          <div class="result-header-card">
+            <h3>🎉 Mock Test Completed!</h3>
+            <p>Here is your comprehensive score card and subject analysis.</p>
+
+            <div class="result-metrics-grid" style="margin-top: 20px;">
+              <div class="metric-box score-highlight">
+                <span class="metric-num" id="result-score-val">0 / 20</span>
+                <span class="metric-lbl">Total Score</span>
+              </div>
+              <div class="metric-box accuracy-highlight">
+                <span class="metric-num" id="result-accuracy-val">0%</span>
+                <span class="metric-lbl">Accuracy</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num" id="result-correct-val" style="color: #10b981;">0</span>
+                <span class="metric-lbl">Correct</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num" id="result-wrong-val" style="color: #f43f5e;">0</span>
+                <span class="metric-lbl">Incorrect</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num" id="result-skipped-val" style="color: #94a3b8;">0</span>
+                <span class="metric-lbl">Skipped</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num" id="result-time-val">0m 0s</span>
+                <span class="metric-lbl">Time Taken</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; justify-content: center; gap: 14px;">
+              <button id="mock-reattempt-btn" class="btn btn-secondary">
+                <i class="fa-solid fa-rotate"></i> Re-Attempt Test
+              </button>
+              <button class="btn btn-gold" data-plan-upgrade="premium">
+                <i class="fa-solid fa-bolt"></i> Unlock Unlimited Mocks (₹99)
+              </button>
+            </div>
+          </div>
+
+          <h3 class="solutions-section-title"><i class="fa-solid fa-list-ol"></i> Step-by-Step Solutions & Reasoning</h3>
+          <div class="result-solutions-list" id="result-solutions-list">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Chatbot AI Study Assistant -->
+  <section class="section-wrapper" id="ai-assistant-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> 24/7 AI Chatbot</span>
+        <h2 class="section-title">Chatbot <span>AI Study Assistant</span></h2>
+        <p class="section-subtitle">Real-time conversational AI chatbot for instant concept explanations, PYQ doubt solving, formula shortcuts, and answer writing.</p>
+      </div>
+
+      <div class="ai-assistant-wrapper">
+        <div class="ai-assistant-header">
+          <div class="ai-mentor-identity">
+            <div class="ai-avatar-badge"><i class="fa-solid fa-robot"></i></div>
+            <div>
+              <h3>Chatbot AI Study Assistant</h3>
+              <p><i class="fa-solid fa-circle" style="font-size: 0.6rem; color: #10b981;"></i> Online • Specialized in 50+ Central &amp; State Govt Exams</p>
+            </div>
+          </div>
+          <div class="ai-header-controls">
+            <button class="btn btn-outline btn-xs" id="ai-clear-chat-btn" title="Clear Chat History">
+              <i class="fa-solid fa-trash"></i> Clear Chat
+            </button>
+            <div class="ai-quota-pill free" id="ai-quota-badge">
+              <i class="fa-solid fa-sparkles"></i> 5 Queries Left Today
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-prompts-carousel">
+          <button class="ai-prompt-pill" data-query="Explain Article 32 of Constitution and all 5 Writs with case laws">🏛️ Article 32 &amp; Writs</button>
+          <button class="ai-prompt-pill" data-query="Short trick for Time and Work in Math (Efficiency method)">⚡ Time &amp; Work Shortcut</button>
+          <button class="ai-prompt-pill" data-query="Key Gujarat Government Schemes and Dholera Semiconductor Vision">🦁 Gujarat Schemes &amp; Dholera</button>
+          <button class="ai-prompt-pill" data-query="Give high-scoring UPSC Mains GS answer writing framework with flowchart example">✍️ UPSC Mains Framework</button>
+          <button class="ai-prompt-pill" data-query="Quiz me with 3 high-yield MCQs on Indian Polity right now">🎯 Test Me: 3 Polity MCQs</button>
+        </div>
+
+        <div class="ai-chat-messages" id="ai-chat-messages">
+          <!-- Chat messages injected here -->
+        </div>
+
+        <div class="ai-input-wrapper">
+          <input type="text" id="ai-input-text" placeholder="Ask Chatbot AI any exam question, math shortcut, syllabus doubt...">
+          <button class="btn btn-primary" id="ai-send-btn">
+            <i class="fa-solid fa-paper-plane"></i> Ask AI Bot
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Smart AI Study Planner & Timetable Generator -->
+  <section class="section-wrapper" id="planner-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> AI Schedule Builder</span>
+        <h2 class="section-title">Smart <span>Daily Study Planner</span></h2>
+        <p class="section-subtitle">Enter your daily available hours and subjects; let AI build a balanced hourly preparation routine.</p>
+      </div>
+
+      <div class="planner-grid">
+        <!-- Form Controls -->
+        <div class="planner-form-card">
+          <form id="planner-form">
+            <div class="form-group">
+              <label><i class="fa-solid fa-bullseye"></i> Target Exam</label>
+              <select id="planner-target-exam" class="form-control">
+                <optgroup label="⚡ Current Year Active Exams">
+                  <option value="gpsc">GPSC Class 1 &amp; 2 (Gujarat)</option>
+                  <option value="upsc">UPSC Civil Services (CSE)</option>
+                  <option value="ssc">SSC CGL</option>
+                  <option value="banking">SBI / IBPS PO</option>
+                  <option value="police">Gujarat Police PSI / Constable</option>
+                </optgroup>
+                <optgroup label="🎯 Future Year Target Exams">
+                  <option value="gpsc-2027">GPSC Class 1 &amp; 2 (Next Cycle)</option>
+                  <option value="upsc-2027">UPSC Civil Services (Next Year)</option>
+                  <option value="ssc-2027">SSC CGL (Next Cycle)</option>
+                  <option value="rrb-alp-2027">Railway RRB ALP</option>
+                  <option value="upsc-2028">UPSC CSE (Long-Term Foundation)</option>
+                  <option value="gpsc-2028">GPSC Class 1 &amp; 2 (Long-Term)</option>
+                  <option value="upsc-2030">UPSC CSE (Strategic Career Vision)</option>
+                  <option value="bullet-train-2030">High-Speed Rail / Bullet Train Project</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fa-solid fa-route"></i> Preparation Track Mode</label>
+              <select id="planner-timeline-mode" class="form-control">
+                <option value="current">⚡ Current Imminent Mode (0-3 Months — Crash & Mock Focus)</option>
+                <option value="future" selected>🎯 Target Future Mode (Foundation + Conceptual Mastery)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <label style="margin: 0;"><i class="fa-solid fa-clock"></i> Daily Study Capacity</label>
+                <span class="range-val-badge" id="planner-hours-val">6 Hours / Day</span>
+              </div>
+              <div class="range-slider-wrap">
+                <input type="range" id="planner-hours" min="2" max="12" step="1" value="6">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fa-solid fa-sun"></i> Daily Routine Preference</label>
+              <select id="planner-routine-type" class="form-control">
+                <option value="morning">🌅 Early Morning (Starts 6:00 AM)</option>
+                <option value="day">☀️ Standard Daytime (Starts 7:00 AM)</option>
+                <option value="night">🌙 Night Owl (Starts 9:00 AM to late night)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fa-solid fa-layer-group"></i> Focus Subjects Today</label>
+              <div class="subjects-checkbox-grid">
+                <label class="sub-check-item"><input type="checkbox" class="planner-subject-check" value="Indian Polity & Constitution" checked> Polity</label>
+                <label class="sub-check-item"><input type="checkbox" class="planner-subject-check" value="History & Gujarat Culture" checked> History & Culture</label>
+                <label class="sub-check-item"><input type="checkbox" class="planner-subject-check" value="Quantitative Aptitude" checked> Math / Quant</label>
+                <label class="sub-check-item"><input type="checkbox" class="planner-subject-check" value="Logical Reasoning" checked> Reasoning</label>
+                <label class="sub-check-item"><input type="checkbox" class="planner-subject-check" value="Indian Economy & Budget"> Economy</label>
+                <label class="sub-check-item"><input type="checkbox" class="planner-subject-check" value="Science & Technology"> Science & Tech</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Daily Routine
+            </button>
+          </form>
+        </div>
+
+        <!-- Generated Result View -->
+        <div id="planner-result-container">
+          <div id="planner-summary-box"></div>
+          <div class="planner-timetable-list" id="planner-timetable-list">
+            <!-- Timetable cards rendered dynamically -->
+          </div>
+          <div class="planner-actions-bar">
+            <button class="btn btn-secondary" id="planner-save-btn">
+              <i class="fa-solid fa-bookmark"></i> Save Timetable
+            </button>
+            <button class="btn btn-outline" id="planner-print-btn">
+              <i class="fa-solid fa-print"></i> Print / Export Schedule
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Important Resources & PYQs -->
+  <section class="section-wrapper" id="resources-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-download"></i> Verified Downloads</span>
+        <h2 class="section-title">Important <span>Exam Resources & PYQs</span></h2>
+        <p class="section-subtitle">Download previous year question papers with official keys and access direct government recruitment portals.</p>
+      </div>
+
+      <div class="resources-grid" id="pyq-papers-list">
+        <!-- PYQ cards rendered dynamically -->
+      </div>
+
+      <div class="section-heading-wrap" style="margin-top: 50px; margin-bottom: 30px;">
+        <h3 style="font-size: 1.5rem; color: #fff;">🏛️ Official Government Examination Portals</h3>
+      </div>
+
+      <div class="portals-grid" id="official-portals-grid">
+        <!-- Official portals rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Student Progress Tracker -->
+  <section class="section-wrapper" id="progress-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-chart-line"></i> Performance Analytics</span>
+        <h2 class="section-title">Student <span>Progress Tracker</span></h2>
+        <p class="section-subtitle">Track your accuracy rates, questions solved, streak consistency, and recent mock exam history.</p>
+      </div>
+
+      <div class="tracker-stats-grid">
+        <div class="tracker-stat-card">
+          <div class="ts-icon blue"><i class="fa-solid fa-circle-question"></i></div>
+          <div class="ts-info">
+            <h3 id="tracker-attempted">84</h3>
+            <p>Questions Attempted</p>
+          </div>
+        </div>
+
+        <div class="tracker-stat-card">
+          <div class="ts-icon green"><i class="fa-solid fa-bullseye"></i></div>
+          <div class="ts-info">
+            <h3 id="tracker-accuracy">81%</h3>
+            <p>Mock Accuracy Rate</p>
+          </div>
+        </div>
+
+        <div class="tracker-stat-card">
+          <div class="ts-icon amber"><i class="fa-solid fa-fire"></i></div>
+          <div class="ts-info">
+            <h3 id="tracker-streak">6 Days 🔥</h3>
+            <p>Daily Active Streak</p>
+          </div>
+        </div>
+
+        <div class="tracker-stat-card">
+          <div class="ts-icon purple"><i class="fa-solid fa-book-reader"></i></div>
+          <div class="ts-info">
+            <h3 id="tracker-hours">42 Hrs</h3>
+            <p>Study Hours Logged</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracker-history-card">
+        <h3><i class="fa-solid fa-clock-rotate-left"></i> Recent Mock Test History</h3>
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Exam Name</th>
+              <th>Date</th>
+              <th>Score</th>
+              <th>Accuracy</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tracker-history-table-body">
+            <!-- Dynamically loaded mock history -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Premium Subscription & Pricing Plans -->
+  <section class="section-wrapper" id="pricing-section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <span class="section-tag"><i class="fa-solid fa-crown"></i> Affordable Excellence</span>
+        <h2 class="section-title">Upgrade to <span>SmartGovtPrep Premium</span></h2>
+        <p class="section-subtitle">Supercharge your preparation with unlimited mocks, 50-unlimited AI study assistant queries, and personalized rank roadmaps.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3>Free Aspirant</h3>
+            <p style="font-size: 0.85rem;">Essential toolkit for beginners</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">₹</span>
+              <span class="plan-price">0</span>
+              <span class="plan-period">/ month</span>
+            </div>
+          </div>
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> 5 AI Study Questions / Day</li>
+            <li><i class="fa-solid fa-circle-check"></i> 5 MCQs Practice / Day</li>
+            <li><i class="fa-solid fa-circle-check"></i> Basic Concept Explanations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Public Exam Calendars &amp; Syllabi</li>
+            <li><i class="fa-solid fa-circle-check"></i> Daily Current Affairs Digest</li>
+          </ul>
+          <button class="btn btn-secondary btn-block" onclick="window.showToast('You are on Free Plan', 'Enjoy free daily resources!', 'info')">
+            Current Plan
+          </button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card popular">
+          <div class="popular-ribbon">⭐ Most Popular (Aspirant Choice)</div>
+          <div class="plan-header">
+            <h3 style="color: #38bdf8;">Premium Aspirant</h3>
+            <p style="font-size: 0.85rem;">Comprehensive toolkit for serious rankers</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">₹</span>
+              <span class="plan-price">99</span>
+              <span class="plan-period">/ month</span>
+            </div>
+          </div>
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> <strong>50 AI Study Questions / Day</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>UNLIMITED MCQs &amp; Mock Tests</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> AI Smart Study Timetable Generator</li>
+            <li><i class="fa-solid fa-circle-check"></i> Step-by-Step Wrong Answer Breakdown</li>
+            <li><i class="fa-solid fa-circle-check"></i> Downloadable Revision Flashcards</li>
+            <li><i class="fa-solid fa-circle-check"></i> 100% Ad-Free Experience</li>
+          </ul>
+          <button class="btn btn-gold btn-block" data-plan-upgrade="premium">
+            <i class="fa-solid fa-bolt"></i> Upgrade to Premium (₹99)
+          </button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 style="color: #fbbf24;">Pro Ranker</h3>
+            <p style="font-size: 0.85rem;">3 Months intensive AI study assistance</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">₹</span>
+              <span class="plan-price">299</span>
+              <span class="plan-period">/ 3 months</span>
+            </div>
+          </div>
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> <strong>UNLIMITED AI Study Assistant Queries</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>PDF &amp; Notes Q&amp;A Solver</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> Weak-Topic AI Diagnostic System</li>
+            <li><i class="fa-solid fa-circle-check"></i> Personalized Exam Rank Roadmap</li>
+            <li><i class="fa-solid fa-circle-check"></i> Advanced Mock Test Percentile Analytics</li>
+            <li><i class="fa-solid fa-circle-check"></i> Priority AI Assistant Response Mode</li>
+          </ul>
+          <button class="btn btn-primary btn-block" data-plan-upgrade="pro">
+            <i class="fa-solid fa-crown"></i> Upgrade to Pro (₹299)
+          </button>
+        </div>
+
+        <!-- Lifetime Government Exam Pass -->
+        <div class="pricing-card lifetime-pass-card">
+          <div class="lifetime-ribbon">👑 LIFETIME ALL-ACCESS PASS</div>
+          <div class="plan-header">
+            <h3 style="color: #f59e0b; font-size: 1.25rem;">👑 Lifetime Govt Pass</h3>
+            <p style="font-size: 0.85rem;">Unlimited access for your entire career</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">₹</span>
+              <span class="plan-price">499</span>
+              <span class="plan-period">/ one-time for life</span>
+            </div>
+          </div>
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> <strong>LIFETIME Unlimited Access to ALL Exams</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> <strong>24/7 Unlimited Chatbot AI Study Assistant for Life</strong></li>
+            <li><i class="fa-solid fa-circle-check"></i> All Full-Length Mocks &amp; PYQ Solutions</li>
+            <li><i class="fa-solid fa-circle-check"></i> Lifetime Current Affairs &amp; Notes Archive</li>
+            <li><i class="fa-solid fa-circle-check"></i> All Future Central &amp; Gujarat State Cycles</li>
+            <li><i class="fa-solid fa-circle-check"></i> Priority 1-on-1 Rank Strategy Guidance</li>
+          </ul>
+          <button class="btn btn-gold btn-block" data-plan-upgrade="lifetime" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #000; font-weight: 800;">
+            <i class="fa-solid fa-infinity"></i> Get Lifetime Pass (₹499)
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Payment Checkout Modal -->
+  <div id="payment-modal" class="custom-modal-overlay hidden">
+    <div class="payment-modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-shield-halved" style="color: #10b981;"></i> Secure Payment Checkout</h3>
+        <button id="payment-modal-close" class="modal-close-icon"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="checkout-summary-card">
+        <div class="checkout-plan-header">
+          <h4 id="checkout-plan-title">Premium Aspirant</h4>
+          <div>
+            <strong id="checkout-plan-price" style="font-size: 1.3rem; color: #38bdf8;">₹99</strong>
+            <span id="checkout-plan-period" style="font-size: 0.85rem; color: var(--text-dim);"> / month</span>
+          </div>
+        </div>
+        <ul class="checkout-features-list" id="checkout-plan-features">
+          <!-- Populated from JS -->
+        </ul>
+      </div>
+
+      <!-- Coupon Code Section -->
+      <div class="checkout-coupon-box">
+        <input type="text" id="checkout-coupon-code" placeholder="Enter Coupon (e.g. SMART50, GOVT2026)">
+        <button class="btn btn-secondary btn-sm" id="checkout-apply-coupon-btn">Apply Coupon</button>
+      </div>
+      <div id="checkout-coupon-msg" class="coupon-feedback"></div>
+
+      <!-- Payment Methods -->
+      <div class="payment-methods-tabs">
+        <div class="payment-method-tab active" data-method="upi"><i class="fa-solid fa-mobile-screen"></i> UPI Apps</div>
+        <div class="payment-method-tab" data-method="qr"><i class="fa-solid fa-qrcode"></i> Scan QR</div>
+        <div class="payment-method-tab" data-method="card"><i class="fa-regular fa-credit-card"></i> Card</div>
+        <div class="payment-method-tab" data-method="netbanking"><i class="fa-solid fa-building-columns"></i> NetBanking</div>
+      </div>
+
+      <!-- UPI View -->
+      <div id="pay-method-upi" class="payment-view-content">
+        <label style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 6px;">Enter UPI ID / VPA</label>
+        <input type="text" class="form-control" placeholder="username@okhdfcbank or yourname@paytm" value="aspirant@upi">
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+          <span class="badge badge-primary"><i class="fa-brands fa-google-pay"></i> GPay</span>
+          <span class="badge badge-primary">PhonePe</span>
+          <span class="badge badge-primary">Paytm UPI</span>
+        </div>
+      </div>
+
+      <!-- QR View -->
+      <div id="pay-method-qr" class="payment-view-content hidden">
+        <div class="qr-preview-box">
+          <div class="mock-qr-code"><i class="fa-solid fa-qrcode"></i></div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Scan with any UPI App (GPay, PhonePe, Paytm, BHIM)</p>
+        </div>
+      </div>
+
+      <!-- Card View -->
+      <div id="pay-method-card" class="payment-view-content hidden">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Card Number (XXXX XXXX XXXX XXXX)" value="4532 •••• •••• 8890">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <input type="text" class="form-control" placeholder="MM/YY" value="08/29">
+          <input type="password" class="form-control" placeholder="CVV" value="•••">
+        </div>
+      </div>
+
+      <!-- Netbanking View -->
+      <div id="pay-method-netbanking" class="payment-view-content hidden">
+        <select class="form-control">
+          <option>State Bank of India (SBI)</option>
+          <option>HDFC Bank</option>
+          <option>ICICI Bank</option>
+          <option>Axis Bank</option>
+          <option>Bank of Baroda</option>
+        </select>
+      </div>
+
+      <!-- Total & Pay Button -->
+      <div class="checkout-pricing-table">
+        <div class="pricing-row hidden" id="checkout-discount-row">
+          <span>Coupon Discount</span>
+          <span class="discount-text" id="checkout-discount-val">-₹0</span>
+        </div>
+        <div class="pricing-row total-row">
+          <span>Total Payable</span>
+          <span id="checkout-total-val">₹99</span>
+        </div>
+      </div>
+
+      <button id="checkout-submit-btn" class="btn btn-gold btn-block btn-lg" style="margin-top: 18px;">
+        <i class="fa-solid fa-lock"></i> Pay & Activate Plan
+      </button>
+    </div>
+  </div>
+
+  <!-- 13. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span>SmartGovtPrep</span>
+            <span class="brand-flag">🇮🇳</span>
+          </div>
+          <p style="font-size: 0.88rem; margin-bottom: 16px;">
+            India's smart single-page government exam preparation portal. Empowering lakhs of aspirants for UPSC, GPSC, SSC, Banking, and Police examinations.
+          </p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://t.me" target="_blank" rel="noopener" class="btn btn-secondary btn-sm"><i class="fa-brands fa-telegram"></i> Telegram Channel</a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp Alerts</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#categories-section">Exam Categories</a></li>
+            <li><a href="#upcoming-exams-section">Upcoming Notifications</a></li>
+            <li><a href="#syllabus-section">Syllabus Checklists</a></li>
+            <li><a href="#current-affairs-section">Daily Current Affairs</a></li>
+            <li><a href="#mock-test-section">Live Mock Tests</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Official Links</h4>
+          <ul>
+            <li><a href="https://ojas.gujarat.gov.in" target="_blank" rel="noopener">OJAS Gujarat</a></li>
+            <li><a href="https://gpsc.gujarat.gov.in" target="_blank" rel="noopener">GPSC Portal</a></li>
+            <li><a href="https://upsc.gov.in" target="_blank" rel="noopener">UPSC Portal</a></li>
+            <li><a href="https://ssc.gov.in" target="_blank" rel="noopener">SSC Portal</a></li>
+            <li><a href="https://ibps.in" target="_blank" rel="noopener">IBPS Online</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Portal Disclaimer</h4>
+          <p style="font-size: 0.82rem; color: var(--text-dim); line-height: 1.5;">
+            SmartGovtPrep is an independent educational portal designed to help aspirants. All exam dates, syllabus items, and notifications are compiled from official gazettes and portals. Candidates are advised to cross-verify from official government websites.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 SmartGovtPrep India • Built for Serious Aspirants • All Rights Reserved</span>
+        <span>Version 2.6 Pro • High-Performance Web Portal</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/mockTest.js"></script>
+  <script src="js/aiAssistant.js"></script>
+  <script src="js/studyPlanner.js"></script>
+  <script src="js/payment.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
